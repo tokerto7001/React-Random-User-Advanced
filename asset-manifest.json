@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/React-Random-User-Advanced/static/css/main.66a3d84f.chunk.css",
+    "main.js": "/React-Random-User-Advanced/static/js/main.d403b6ad.chunk.js",
+    "main.js.map": "/React-Random-User-Advanced/static/js/main.d403b6ad.chunk.js.map",
+    "runtime-main.js": "/React-Random-User-Advanced/static/js/runtime-main.198e46f5.js",
+    "runtime-main.js.map": "/React-Random-User-Advanced/static/js/runtime-main.198e46f5.js.map",
+    "static/js/2.80cc29bc.chunk.js": "/React-Random-User-Advanced/static/js/2.80cc29bc.chunk.js",
+    "static/js/2.80cc29bc.chunk.js.map": "/React-Random-User-Advanced/static/js/2.80cc29bc.chunk.js.map",
+    "static/js/3.9d6ed84e.chunk.js": "/React-Random-User-Advanced/static/js/3.9d6ed84e.chunk.js",
+    "static/js/3.9d6ed84e.chunk.js.map": "/React-Random-User-Advanced/static/js/3.9d6ed84e.chunk.js.map",
+    "index.html": "/React-Random-User-Advanced/index.html",
+    "static/css/main.66a3d84f.chunk.css.map": "/React-Random-User-Advanced/static/css/main.66a3d84f.chunk.css.map",
+    "static/js/2.80cc29bc.chunk.js.LICENSE.txt": "/React-Random-User-Advanced/static/js/2.80cc29bc.chunk.js.LICENSE.txt",
+    "static/media/cw.0657caf0.svg": "/React-Random-User-Advanced/static/media/cw.0657caf0.svg",
+    "static/media/design.9f215bce.svg": "/React-Random-User-Advanced/static/media/design.9f215bce.svg",
+    "static/media/growing-up-man.5024153b.svg": "/React-Random-User-Advanced/static/media/growing-up-man.5024153b.svg",
+    "static/media/growing-up-woman.a1585842.svg": "/React-Random-User-Advanced/static/media/growing-up-woman.a1585842.svg",
+    "static/media/mail.42e0750e.svg": "/React-Random-User-Advanced/static/media/mail.42e0750e.svg",
+    "static/media/man.4b684e29.svg": "/React-Random-User-Advanced/static/media/man.4b684e29.svg",
+    "static/media/map.72d2b81c.svg": "/React-Random-User-Advanced/static/media/map.72d2b81c.svg",
+    "static/media/padlock.8d2c33d2.svg": "/React-Random-User-Advanced/static/media/padlock.8d2c33d2.svg",
+    "static/media/phone.d017e1ae.svg": "/React-Random-User-Advanced/static/media/phone.d017e1ae.svg",
+    "static/media/woman.05242306.svg": "/React-Random-User-Advanced/static/media/woman.05242306.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.198e46f5.js",
+    "static/js/2.80cc29bc.chunk.js",
+    "static/css/main.66a3d84f.chunk.css",
+    "static/js/main.d403b6ad.chunk.js"
+  ]
+}
