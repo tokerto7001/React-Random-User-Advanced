@@ -69,12 +69,14 @@ function App() {
           <p>{personal == "password" && info?.login?.password }</p>
         </div> 
         <div className="icons">
-          <img src={info?.gender == "female" ? woman : man} onClick={() => handleClick("name")} />
-          <img src={mail} onClick={() => handleClick("email")} />
-          <img src={info?.gender == "female" ? growingWoman : growingMan} onClick={() => handleClick("age")} />
-          <img src={map} onClick={() => handleClick("street")} />
-          <img src={phone} onClick={() => handleClick("phone")} />
-          <img src={padlock} onClick={() => handleClick("password")} />
+        <acronym title="gender"><img src={info?.gender == "female" ? woman : man} onClick={() => handleClick("name")} /></acronym>
+        <acronym title="email"><img src={mail} onClick={() => handleClick("email")} /></acronym>
+        <acronym title="age"><img src={info?.gender == "female" ? growingWoman : growingMan} onClick={() => handleClick("age")} /></acronym>
+        <acronym title="street"><img src={map} onClick={() => handleClick("street")} /></acronym>
+        <acronym title="phone"><img src={phone} onClick={() => handleClick("phone")} /></acronym>
+        <acronym title="password"><img src={padlock} onClick={() => handleClick("password")} /></acronym>
+        
+          
         </div>
         <div className="buttons">
           <button onClick = {() => setUser(!user) }>NEW USER</button>
