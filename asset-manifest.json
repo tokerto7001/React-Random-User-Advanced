@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Random-User-Advanced/static/css/main.f6e23f0d.chunk.css",
-    "main.js": "/React-Random-User-Advanced/static/js/main.8ae97de6.chunk.js",
-    "main.js.map": "/React-Random-User-Advanced/static/js/main.8ae97de6.chunk.js.map",
+    "main.js": "/React-Random-User-Advanced/static/js/main.b634ca46.chunk.js",
+    "main.js.map": "/React-Random-User-Advanced/static/js/main.b634ca46.chunk.js.map",
     "runtime-main.js": "/React-Random-User-Advanced/static/js/runtime-main.198e46f5.js",
     "runtime-main.js.map": "/React-Random-User-Advanced/static/js/runtime-main.198e46f5.js.map",
     "static/js/2.80cc29bc.chunk.js": "/React-Random-User-Advanced/static/js/2.80cc29bc.chunk.js",
@@ -13,7 +13,6 @@
     "static/css/main.f6e23f0d.chunk.css.map": "/React-Random-User-Advanced/static/css/main.f6e23f0d.chunk.css.map",
     "static/js/2.80cc29bc.chunk.js.LICENSE.txt": "/React-Random-User-Advanced/static/js/2.80cc29bc.chunk.js.LICENSE.txt",
     "static/media/cw.0657caf0.svg": "/React-Random-User-Advanced/static/media/cw.0657caf0.svg",
-    "static/media/design.9f215bce.svg": "/React-Random-User-Advanced/static/media/design.9f215bce.svg",
     "static/media/growing-up-man.5024153b.svg": "/React-Random-User-Advanced/static/media/growing-up-man.5024153b.svg",
     "static/media/growing-up-woman.a1585842.svg": "/React-Random-User-Advanced/static/media/growing-up-woman.a1585842.svg",
     "static/media/mail.42e0750e.svg": "/React-Random-User-Advanced/static/media/mail.42e0750e.svg",
@@ -27,6 +26,6 @@
     "static/js/runtime-main.198e46f5.js",
     "static/js/2.80cc29bc.chunk.js",
     "static/css/main.f6e23f0d.chunk.css",
-    "static/js/main.8ae97de6.chunk.js"
+    "static/js/main.b634ca46.chunk.js"
   ]
 }
