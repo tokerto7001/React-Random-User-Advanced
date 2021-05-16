@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/React-Random-User-Advanced/static/css/main.cedf8cec.chunk.css",
-    "main.js": "/React-Random-User-Advanced/static/js/main.6116946f.chunk.js",
-    "main.js.map": "/React-Random-User-Advanced/static/js/main.6116946f.chunk.js.map",
+    "main.css": "/React-Random-User-Advanced/static/css/main.56254890.chunk.css",
+    "main.js": "/React-Random-User-Advanced/static/js/main.8106687e.chunk.js",
+    "main.js.map": "/React-Random-User-Advanced/static/js/main.8106687e.chunk.js.map",
     "runtime-main.js": "/React-Random-User-Advanced/static/js/runtime-main.198e46f5.js",
     "runtime-main.js.map": "/React-Random-User-Advanced/static/js/runtime-main.198e46f5.js.map",
     "static/js/2.80cc29bc.chunk.js": "/React-Random-User-Advanced/static/js/2.80cc29bc.chunk.js",
@@ -10,11 +10,12 @@
     "static/js/3.9d6ed84e.chunk.js": "/React-Random-User-Advanced/static/js/3.9d6ed84e.chunk.js",
     "static/js/3.9d6ed84e.chunk.js.map": "/React-Random-User-Advanced/static/js/3.9d6ed84e.chunk.js.map",
     "index.html": "/React-Random-User-Advanced/index.html",
-    "static/css/main.cedf8cec.chunk.css.map": "/React-Random-User-Advanced/static/css/main.cedf8cec.chunk.css.map",
+    "static/css/main.56254890.chunk.css.map": "/React-Random-User-Advanced/static/css/main.56254890.chunk.css.map",
     "static/js/2.80cc29bc.chunk.js.LICENSE.txt": "/React-Random-User-Advanced/static/js/2.80cc29bc.chunk.js.LICENSE.txt",
     "static/media/cw.0657caf0.svg": "/React-Random-User-Advanced/static/media/cw.0657caf0.svg",
     "static/media/growing-up-man.5024153b.svg": "/React-Random-User-Advanced/static/media/growing-up-man.5024153b.svg",
     "static/media/growing-up-woman.a1585842.svg": "/React-Random-User-Advanced/static/media/growing-up-woman.a1585842.svg",
+    "static/media/loading.11562bdd.gif": "/React-Random-User-Advanced/static/media/loading.11562bdd.gif",
     "static/media/mail.42e0750e.svg": "/React-Random-User-Advanced/static/media/mail.42e0750e.svg",
     "static/media/man.4b684e29.svg": "/React-Random-User-Advanced/static/media/man.4b684e29.svg",
     "static/media/map.72d2b81c.svg": "/React-Random-User-Advanced/static/media/map.72d2b81c.svg",
@@ -25,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.198e46f5.js",
     "static/js/2.80cc29bc.chunk.js",
-    "static/css/main.cedf8cec.chunk.css",
-    "static/js/main.6116946f.chunk.js"
+    "static/css/main.56254890.chunk.css",
+    "static/js/main.8106687e.chunk.js"
   ]
 }
