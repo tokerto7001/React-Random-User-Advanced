@@ -14,16 +14,22 @@ import axios from "axios"
 function App() {
 
   const [info, setInfo] = useState([])
-  const [ tableContent, setTableContent ] = useState(false)
   const [ userList, setUserList ] = useState( [] )
   const [personal, setPersonal] = useState("name")
-  const [ newUser, setNewUser ] = useState("NEW USER")
+  const [ loading, setLoading ] = useState(false)
+  const [ information, setInformation ] = useState([])
+  
   
   const fetchData = () => {
-    setNewUser("LOADING...")
+    setLoading(true)
     axios.get("https://randomuser.me/api/")
-    .then((res) => setInfo(res.data.results[0]))
-    .then(() => setNewUser("NEW USER"))
+    .then((res) => {
+      setInfo(res.data.results[0])
+      setInformation([res.data.results[0].name.title, res.data.results[0].name.first, res.data.results[0].name.last] )
+    }
+      )
+    .then(() => setLoading(false))
+    
   }
 
   useEffect(() => {
@@ -31,9 +37,6 @@ function App() {
   }, [])
 
   const addUser = () => {
-    // const twice = (user) => user.email == info.email
-    // if(userList.some(twice)){
-    //   alert("Nope")
       
     if(userList.filter(user => user.email === info.email).length > 0){
       alert("You already added this user")
@@ -49,17 +52,13 @@ function App() {
         }
       ] )
     }
-    
-      setTableContent(true)
-     
   }
-
-  const handleClick = (information) => {
-    setPersonal(information)
+  
+  const handleClick = (information, personal) => {
+    setInformation(information)
+    setPersonal(personal)
   }
-
-  // console.log(info)
-  // console.log(userList)
+  
 
   return (
     <div className="App">
@@ -68,30 +67,28 @@ function App() {
         <div className="card-title-background"></div>
         <img alt="img" src={info?.picture?.large} className="image" />
         <div className="personal-info">
-          <p>My {personal} is</p>
-          <p>{personal === "name" && info?.name?.title} {personal === "name" && info?.name?.first} {personal === "name" && info?.name?.last}</p>
-          <p>{personal === "email" && info?.email}</p>
-          <p>{personal === "age" && info?.dob?.age}</p>
-          <p>{personal === "street" && info?.location?.street?.number} {personal === "street" && info?.location?.street?.name}  </p>
-          <p>{personal === "phone" && info?.phone} </p>
-          <p>{personal === "password" && info?.login?.password }</p>
+        {loading ? <p>Loading...</p> : <div><p>My {personal} is</p> 
+        <p>{information?.map((info) => (
+          <span>{info + " "} </span>
+        ))}</p>
+         </div>}  
         </div> 
         <div className="icons">
-        <acronym title="gender"><img alt="man-woman" src={info?.gender === "female" ? woman : man} onClick={() => handleClick("name")} /></acronym>
-        <acronym title="email"><img alt="email" src={mail} onClick={() => handleClick("email")} /></acronym>
-        <acronym title="age"><img alt="growingman-woman" src={info?.gender === "female" ? growingWoman : growingMan} onClick={() => handleClick("age")} /></acronym>
-        <acronym title="street"><img alt="street" src={map} onClick={() => handleClick("street")} /></acronym>
-        <acronym title="phone"><img alt="phone" src={phone} onClick={() => handleClick("phone")} /></acronym>
-        <acronym title="password"><img alt="password" src={padlock} onClick={() => handleClick("password")} /></acronym>
+        <acronym title="gender"><img alt="man-woman" src={info?.gender === "female" ? woman : man} onClick={() => handleClick([info.name.title, info.name.first, info.name.last], "name")} /></acronym>
+        <acronym title="email"><img alt="email" src={mail} onClick={() => handleClick([info.email],"email")} /></acronym>
+        <acronym title="age"><img alt="growingman-woman" src={info?.gender === "female" ? growingWoman : growingMan} onClick={() => handleClick([info.dob.age],"age")} /></acronym>
+        <acronym title="street"><img alt="street" src={map} onClick={() => handleClick([info.location.street.number, info.location.street.name],"street")} /></acronym>
+        <acronym title="phone"><img alt="phone" src={phone} onClick={() => handleClick([info.phone],"phone")} /></acronym>
+        <acronym title="password"><img alt="password" src={padlock} onClick={() => handleClick([info.login.password],"password")} /></acronym>
         
           
         </div>
         <div className="buttons">
-          <button onClick = {fetchData }> {newUser}</button>
+          <button onClick = {fetchData }> NEW USER </button>
           <button onClick={addUser} >ADD USER</button>
         </div>
         <div className="list">
-          { tableContent && 
+          { userList.length > 0 && 
             <table>
             <thead>
             <tr>
