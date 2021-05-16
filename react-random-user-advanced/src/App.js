@@ -7,6 +7,7 @@ import mail from "./components/mail.svg"
 import map from "./components/map.svg"
 import padlock from "./components/padlock.svg"
 import phone from "./components/phone.svg"
+import loadingGif from "./components/loading.gif"
 import { useEffect, useState } from "react"
 import './App.css';
 import axios from "axios"
@@ -29,6 +30,7 @@ function App() {
     }
       )
     .then(() => setLoading(false))
+    setPersonal("name")
     
   }
 
@@ -67,7 +69,7 @@ function App() {
         <div className="card-title-background"></div>
         <img alt="img" src={info?.picture?.large} className="image" />
         <div className="personal-info">
-        {loading ? <p>Loading...</p> : <div><p>My {personal} is</p> 
+        {loading ? <img className="loading" src={loadingGif} /> : <div><p>My {personal} is</p> 
         <p>{information?.map((info) => (
           <span>{info + " "} </span>
         ))}</p>
